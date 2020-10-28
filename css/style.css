@@ -116,7 +116,7 @@ header > div > a:hover {
 .header-links {
 	position: fixed;
 	margin: 0;
-	left: calc(100% - 300px);
+	left: calc(100% - 250px);
 	height: 60px;
 	display: inline-block;
 }
@@ -126,6 +126,21 @@ header > div > a:hover {
 	display: inline-block;
 }
 
+.header-link-logo {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	padding-top: 9px;
+	position: relative;
+	top: 2.5px;
+	left: -10px;
+	background: none;
+	text-decoration: none;
+	color: black;
+	font-size: 30px;
+	-webkit-user-select: none;
+    user-select: none;
+}
 
 .menuDeroulant {
 	display: inline-block;
@@ -197,9 +212,9 @@ header > div > a:hover {
 
 	transform-origin: 4px 0px;
 
-	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-        background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-        opacity 0.55s ease;
+	transition: transform 0.4s cubic-bezier(0.77,0.2,0.05,1.0),
+        background 0.4s cubic-bezier(0.77,0.2,0.05,1.0),
+        opacity 0.45s ease;
 }
 
 .menuDeroulant span:nth-last-child(4)  {
@@ -257,7 +272,7 @@ header > div > a:hover {
 	position: absolute;
 	width: 200px;
 	height: 200px;
-	margin: 6px 0 0 -170px;
+	margin: 6px 0 0 -165px;
 	padding: 0;
 	text-align: right;
 
@@ -274,22 +289,25 @@ header > div > a:hover {
 	margin: 0;
 	background: #ededed;
 	list-style-type: none;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
 
 	transform-origin: 0% 0%;
 	transform: translate(0%, -200%);
 
-	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+	transition: transform 0.4s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 
 	z-index: 10;
 }
 
 .menu li {
 	padding: 10px 0;
-	line-height: 30px;
+	line-height: 30px;	
 }
 
 .menuDeroulant input:first-child ~ div {
 	transform: scale(0,0); 
+	transition-delay: 0.15s;
 }
 
 
@@ -304,11 +322,20 @@ header > div > a:hover {
 
 .panier {
 	height: 400px !important;
-}
+}	
 
 .panier ul {
 	text-align: left;
 	height: 300px;
+}
+
+.login {
+	width: 300px !important;
+	margin-left: -265px !important;	
+}
+
+.login ul {
+	text-align: center;
 }
 
 
