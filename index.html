@@ -2,35 +2,62 @@
 <html>
 <head>
 	<title>Climbing Gear</title>
+
+	<script src="https://kit.fontawesome.com/ab6f5324a5.js" crossorigin="anonymous"></script>
 	<link rel="icon" href="img/logo.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header>
 		<div id="header-title-link">
-			<a  href="index.html#home-1">
+			<a  href="index.html">
 				<img id="logo" src="img/logo.png"></img>
 				<h1 id="header-title">Climbing gear</h1>
 			</a>
 		</div>
 		<div class="header-links">
-			<a class="header-l link" href="index.html#home-1">Home</a>
-			<div class="header-l menu-categorie">
-				<input type="checkbox"/>
+			<a class="header-l link" href="index.html">Home</a>
+			
+			<div class="header-l menuDeroulant">
 
-				<div class="categorie">
-					
+				<input type="radio" name="header-link-radio"/>
+				<input type="radio" name="header-link-radio"/>
+
+				<span></span>
+				<span class="fas fa-fw fa-tags"></span>
+				<span></span>
+
+				<div>
+					<ul class="menu">
+						<a href="shoes.html"><li>Shoes</li></a>	
+						<a href="accessories.html"><li>Accessories</li></a>	
+						<a href="holds.html"><li>Holds</li></a>	
+					</ul>
 				</div>
 			</div>
-			<div class="header-l modal-switch">
-				bla
+
+			
+			<div class="header-l menuDeroulant">
+
+				<input type="radio" name="header-link-radio"/>
+				<input type="radio" name="header-link-radio"/>
+				
+				<span></span>
+				<span class="fas fa-fw fa-shopping-cart"></span>
+				<span></span>
+
+				<div class="panier">
+					<ul class="menu">
+						<li><h3 style="margin: 0;">Panier</h3></li>
+						<li>Votre panier est vide :(</li>
+					</ul>
+				</div>
 			</div>
-			<a class="header-l link" href="index.html#home-5">Contact</a>
 		</div>
 	</header>
 
 	<ul class="side-menu">
-		<input id="rad1" type="radio" name="side-menu-radio">		
+		<input id="rad1" type="radio" name="side-menu-radio" checked>		
 		<label for="rad1" onclick="location='#home-1'">
 			<li>
 				<div class="side-menu-link">HOME</div	>
@@ -72,6 +99,7 @@
 		<div class="pannel">
 			<div class="pannel-image" id="home-1"></div>
 			<div class="pannel-text">
+				<p/>
 				<h2>Welcome to Climbing Gear !</h2>
 				<p>The best climbing shop out there</p>
 			</div> 
