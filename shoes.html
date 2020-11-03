@@ -1,17 +1,324 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Climbing gear</title>
+	<title>Climbing Gear</title>
+
+	<script src="https://kit.fontawesome.com/ab6f5324a5.js" crossorigin="anonymous"></script>
 	<link rel="icon" href="img/logo.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header>
-		<a href="index.html#home-1">
-			<img id="logo" src="img/logo.png"></img>
-			<h1 id="header-title">Climbing gear</h1> 
-		</a>
+		<div id="header-title-link">
+			<a  href="index.html">
+				<img id="logo" src="img/logo.png"></img>
+				<h1 id="header-title">Climbing gear</h1>
+			</a>
+		</div>
+		<div class="header-links">
+			<a class="header-l fas fa-home fa-fw header-link-logo" href="index.html"></a>
+			
+			<div class="header-l menuDeroulant">
+
+				<input type="radio" name="header-link-radio"/>
+				<input type="radio" name="header-link-radio"/>
+
+				<span></span>
+				<span class="fas fa-fw fa-tags"></span>
+				<span></span>
+
+				<div>
+					<ul class="menu">
+						<a href="shoes.html"><li>Shoes</li></a>	
+						<a href="accessories.html"><li>Accessories</li></a>	
+						<a href="holds.html"><li>Holds</li></a>	
+					</ul>
+				</div>
+			</div>
+
+			
+			<div class="header-l menuDeroulant">
+
+				<input type="radio" name="header-link-radio"/>
+				<input type="radio" name="header-link-radio"/>
+				
+				<span></span>
+				<span class="fas fa-fw fa-shopping-cart"></span>
+				<span></span>
+
+				<div class="panier">
+					<ul class="menu">
+						<li><h3 style="margin: 0;">Cart</h3></li>
+						<li>Your cart is empty :(<br>You can buy our stuff by clicking here</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="header-l menuDeroulant">
+
+				<input type="radio" name="header-link-radio"/>
+				<input type="radio" name="header-link-radio"/>
+				
+				<span></span>
+				<span class="fas fa-fw fa-user"></span>
+				<span></span>
+
+				<div class="login">
+					<ul class="menu">
+						<li><h3 style="margin:0">login</h3></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</header>
+
+	<div class="content">
+		<div class="product-container">
+			<div class="image">
+				<img src="img/scarpa1.jpeg" />
+			</div>
+			<p class="pick">choose size</p>
+			<div class="sizes">
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>38</div>
+				</div>
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>39</div>
+				</div>
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>40</div>
+				</div>
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>41</div>
+				</div>
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>42</div>
+				</div>
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>43</div>
+				</div>
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>44</div>
+				</div>
+			</div>
+			<div class="product">
+				<p>Men Climbing Shoes</p>
+				<h1>Scarpa 1</h1>
+				<h2>50€</h2>
+				<p class="desc">
+					bla bla bla bla bla bla bla bla bla bla	bla bla bla bla bla bla bla bla bla bla	bla bla bla bla bla bla bla bla bla bla bla bla
+				</p>
+				<div class="button">
+					<button class="add">Add to Cart</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="product-container">
+			<div class="image">
+				<img src="img/scarpa1.jpeg" />
+			</div>
+			<p class="pick">choose size</p>
+			<div class="sizes">
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>38</div>
+				</div>
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>39</div>
+				</div>
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>40</div>
+				</div>
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>41</div>
+				</div>
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>42</div>
+				</div>
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>43</div>
+				</div>
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>44</div>
+				</div>
+			</div>
+			<div class="product">
+				<p>Men Climbing Shoes</p>
+				<h1>Scarpa 2</h1>
+				<h2>50€</h2>
+				<p class="desc">
+					bla bla bla bla bla bla bla bla bla bla	bla bla bla bla bla bla bla bla bla bla	bla bla bla bla bla bla bla bla bla bla bla bla
+				</p>
+				<div class="button">
+					<button class="add">Add to Cart</button>
+				</div>
+			</div>
+		</div>
+		
+		<div class="product-container">
+			<div class="image">
+				<img src="img/scarpa1.jpeg" />
+			</div>
+			<p class="pick">choose size</p>
+			<div class="sizes">
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>38</div>
+				</div>
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>39</div>
+				</div>
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>40</div>
+				</div>
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>41</div>
+				</div>
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>42</div>
+				</div>
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>43</div>
+				</div>
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>44</div>
+				</div>
+			</div>
+			<div class="product">
+				<p>Men Climbing Shoes</p>
+				<h1>Scarpa 3</h1>
+				<h2>50€</h2>
+				<p class="desc">
+					bla bla bla bla bla bla bla bla bla bla	bla bla bla bla bla bla bla bla bla bla	bla bla bla bla bla bla bla bla bla bla bla bla
+				</p>
+				<div class="button">
+					<button class="add">Add to Cart</button>
+				</div>
+			</div>
+		</div>
+		
+		<div class="product-container">
+			<div class="image">
+				<img src="img/scarpa1.jpeg" />
+			</div>
+			<p class="pick">choose size</p>
+			<div class="sizes">
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>38</div>
+				</div>
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>39</div>
+				</div>
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>40</div>
+				</div>
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>41</div>
+				</div>
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>42</div>
+				</div>
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>43</div>
+				</div>
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>44</div>
+				</div>
+			</div>
+			<div class="product">
+				<p>Men Climbing Shoes</p>
+				<h1>Scarpa 4</h1>
+				<h2>50€</h2>
+				<p class="desc">
+					bla bla bla bla bla bla bla bla bla bla	bla bla bla bla bla bla bla bla bla bla	bla bla bla bla bla bla bla bla bla bla bla bla
+				</p>
+				<div class="button">
+					<button class="add">Add to Cart</button>
+				</div>
+			</div>
+		</div>
+		
+		<div class="product-container">
+			<div class="image">
+				<img src="img/scarpa1.jpeg" />
+			</div>
+			<p class="pick">choose size</p>
+			<div class="sizes">
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>38</div>
+				</div>
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>39</div>
+				</div>
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>40</div>
+				</div>
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>41</div>
+				</div>
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>42</div>
+				</div>
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>43</div>
+				</div>
+				<div class="size">
+					<input type="radio" name="product-1">
+					<div>44</div>
+				</div>
+			</div>
+			<div class="product">
+				<p>Men Climbing Shoes</p>
+				<h1>Scarpa 5</h1>
+				<h2>50€</h2>
+				<p class="desc">
+					bla bla bla bla bla bla bla bla bla bla	bla bla bla bla bla bla bla bla bla bla	bla bla bla bla bla bla bla bla bla bla bla bla
+				</p>
+				<div class="button">
+					<button class="add">Add to Cart</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+
+
 	<footer>
 		footer
 	</footer>
