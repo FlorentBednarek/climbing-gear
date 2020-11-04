@@ -1,17 +1,208 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Climbing gear</title>
+	<title>Climbing Gear</title>
+
+	<script src="https://kit.fontawesome.com/ab6f5324a5.js" crossorigin="anonymous"></script>
 	<link rel="icon" href="img/logo.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header>
-		<a href="index.html#home-1">
-			<img id="logo" src="img/logo.png"></img>
-			<h1 id="header-title">Climbing gear</h1> 
-		</a>
+		<div id="header-title-link">
+			<a  href="index.html">
+				<img id="logo" src="img/logo.png"></img>
+				<h1 id="header-title">Climbing gear</h1>
+			</a>
+		</div>
+		<div class="header-links">
+			<a class="header-l fas fa-home fa-fw header-link-logo" href="index.html"></a>
+			
+			<div class="header-l menuDeroulant">
+
+				<input type="radio" name="header-link-radio"/>
+				<input type="radio" name="header-link-radio"/>
+
+				<span></span>
+				<span class="fas fa-fw fa-tags"></span>
+				<span></span>
+
+				<div>
+					<ul class="menu">
+						<a href="shoes.html"><li>Shoes</li></a>	
+						<a href="accessories.html"><li>Accessories</li></a>	
+						<a href="holds.html"><li>Holds</li></a>	
+					</ul>
+				</div>
+			</div>
+
+			
+			<div class="header-l menuDeroulant">
+
+				<input type="radio" name="header-link-radio"/>
+				<input type="radio" name="header-link-radio"/>
+				
+				<span></span>
+				<span class="fas fa-fw fa-shopping-cart"></span>
+				<span></span>
+
+				<div class="panier">
+					<ul class="menu">
+						<li><h3 style="margin: 0;">Cart</h3></li>
+						<li>Your cart is empty :(<br>You can buy our stuff by clicking here</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="header-l menuDeroulant">
+
+				<input type="radio" name="header-link-radio"/>
+				<input type="radio" name="header-link-radio"/>
+				
+				<span></span>
+				<span class="fas fa-fw fa-user"></span>
+				<span></span>
+
+				<div class="login">
+					<ul class="menu">
+						<li><h3 style="margin:0">login</h3></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</header>
+
+
+	<ul class="side-menu">
+		<input id="rad1" type="radio" name="side-menu-radio">		
+			<li>
+				<a href="index.html" class="side-menu-link">HOME</a>
+			</li>
+		</label>
+		
+		<input id="rad2" type="radio" name="side-menu-radio">
+		<label for="rad2">
+			<li>
+				<a href="shoes.html" class="side-menu-link">SHOES</a>
+			</li>
+		</label>
+
+		<input id="rad3" type="radio" name="side-menu-radio" checked>
+		<label for="rad3">
+			<li>
+				<a href="accessories.html" class="side-menu-link">EQUIPEMENTS</a>
+			</li>
+		</label>
+		
+		<input id="rad4" type="radio" name="side-menu-radio">
+		<label for="rad4">
+			<li>
+				<a href="holds.html" class="side-menu-link">HOLDS</a>
+			</li>
+		</label>
+		
+		<input id="rad5" type="radio" name="side-menu-radio">
+		<label for="rad5">
+			<li>
+				<a href="index.html#home-5" class="side-menu-link">CONTACT</a>
+			</li>
+		</label>
+
+	</ul>
+
+
+	<div class="content">
+		<div class="product-container">
+			<div class="image">
+				<img src="img/product-equipement/carabiner1.jpeg" />
+			</div>
+			<div class="product">
+				<p>Climbing Carabiner</p>
+				<h1>Single Carabiner</h1>
+				<h2>5€</h2>
+				<p class="desc">
+					This simple carabiner is your must have for any climbing activity. The model include an automatic safety.
+				</p><br/>
+				<div class="button">
+					<button class="add">Add to Cart</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="product-container">
+			<div class="image">
+				<img src="img/product-equipement/carabiner2.jpeg" />
+			</div>
+			<div class="product">
+				<p>Climbing Carabiner</p>
+				<h1>Carabiner x2</h1>
+				<h2>9€</h2>
+				<p class="desc">
+					Those 2 carabiners are your must have for any climbing activity. The model include an automatic safety.
+				</p><br/>
+				<div class="button">
+					<button class="add">Add to Cart</button>
+				</div>
+			</div>
+		</div>
+		
+		<div class="product-container">
+			<div class="image">
+				<img src="img/product-equipement/rope1.jpeg" />
+			</div>
+			<div class="product">
+				<p>Climbing Rope</p>
+				<h1>Blue Rope</h1>
+				<h2>30€</h2>
+				<p class="desc">
+					This 35m rope is made with the best materials to prevent any risk of breaking and increase durability.
+				</p><br/>
+				<div class="button">
+					<button class="add">Add to Cart</button>
+				</div>
+			</div>
+		</div>
+		
+		<div class="product-container">
+			<div class="image">
+				<img src="img/product-equipement/grigri.jpeg" />
+			</div>
+			<div class="product">
+				<p>Balaying System</p>
+				<h1>Petzl Grigri</h1>
+				<h2>25€</h2>
+				<p class="desc">
+					The Grigri from PETZL is a semi-automatic balaying system that block the rope if the climber is falling.
+				</p><br/>
+				<div class="button">
+					<button class="add">Add to Cart</button>
+				</div>
+			</div>
+		</div>
+		
+		<div class="product-container">
+			<div class="image">
+				<img src="img/product-equipement/harness.jpeg" />
+			</div>
+			<div class="product">
+				<p>Climbing Harness</p>
+				<h1>Grey Harness</h1>
+				<h2>50€</h2>
+				<p class="desc">
+					This harness fit perfectly the human shape and is your go-to if your climbing any high wall. 
+				</p><br/>
+				<div class="button">
+					<button class="add">Add to Cart</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+
+
 	<footer>
 		footer
 	</footer>
