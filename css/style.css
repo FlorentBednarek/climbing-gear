@@ -622,6 +622,16 @@ input {
 	border-radius: 10px;
 }
 
+
+.ref {
+	font-size: 10px;
+	color: grey;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+}
+
+
 .product-container p {
 	font-size: 0.7em;
 	color: tomato;
