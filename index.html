@@ -162,7 +162,7 @@
 					
 					<div class="contact-line"><p>
 						<label for="mail">E-mail adress</label><br>
-						<input type="mail" name="mail" placeholder="Your e-mail..." required><br><br><br>
+						<input type="mail" name="mail" placeholder="Your e-mail..." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="email adress" required><br><br><br>
 					</p>
 					
 					<p class="sexe" >
@@ -186,7 +186,7 @@
 					
 					<p>
 						<label for="date de naissance">Date of birth</label><br>
-						<input type="date" name="date de naissance" required>
+						<input type="date" name="date de naissance" min="1900-01-01" max="2030-12-31" required>
 					</p>
 					</div>
 
@@ -197,7 +197,7 @@
 
 
 					<p>
-						<input type="submit">
+						<input type="submit" name="Submit" value="Submit">
 					</p>
 				</form>
 			</div> 	

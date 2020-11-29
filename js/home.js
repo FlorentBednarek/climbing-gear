@@ -66,14 +66,14 @@ function validate_form() {
 	form = document.forms["contact_form"];
 
 	mail = form["mail"].value;
-	if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(mail) == false) {
-		alert("Champs mail invalide.");
+	re = /\S+@\S+\.\S+/;
+	if (re.test(mail) == false) {
 		return false;
 	}
 
 	date = form["date de naissance"].value.split("-");
-	if (date[1].length != 2 || date[2] != 2 || date[3].length != 4) {
-		alert("Date de naissance invalide.");
+	if (date[0].length > 4 || date[1].length > 2 || date[2].length > 2) {
 		return false;
 	}
+	return true;
 }
