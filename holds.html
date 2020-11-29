@@ -16,7 +16,7 @@
 			</a>
 		</div>
 		<div class="header-links">
-			<a class="header-l fas fa-home fa-fw header-link-logo" href="index.html"></a>
+			<a class="header-l fas fa-home fa-fw header-link-logo" href="index.html#home-1"></a>
 			
 			<div class="header-l menuDeroulant">
 
@@ -49,7 +49,7 @@
 				<div class="panier">
 					<ul class="menu">
 						<li><h3 style="margin: 0;">Cart</h3></li>
-						<li>Your cart is empty :(<br>You can buy our stuff by clicking here</li>
+						<li>Your cart is empty :(</li>
 					</ul>
 				</div>
 			</div>
@@ -111,9 +111,15 @@
 	</ul>
 
 
-	<div class="content">
-		<div class="product-container">
+	<div id="content">		
+		<div class="stock-toggle">
+			<input type="checkbox" class="toggle" autocomplete="off" onclick="hide_stock()">
+  			<label for="toggle">Stock</label>
+		</div>
+
+		<div style="margin: 0;"><div class="product-container" >
 			<div class="ref">ref: h1</div>
+			<div class="stock hide">Stock restant: 8</div>
 			<div class="image">
 				<img src="img/product-holds/small.jpg" />
 			</div>
@@ -125,13 +131,19 @@
 					A pack of 10 small black holds, perfect to train your grip on crimp or making perfect foot hold. 
 				</p><br/>
 				<div class="button">
-					<button class="add">Add to Cart</button>
+					<div class="quantity">
+						<button onclick="subQ(this)">-</button>
+						<button class="quantity-value">0</button>
+						<button onclick="addQ(this)">+</button>
+					</div>
+					<div><button class="add">Add to Cart</button></div>
 				</div>
 			</div>
-		</div>
+		</div></div>
 
-		<div class="product-container">
+		<div style="margin: 0;"><div class="product-container">
 			<div class="ref">ref: h2</div>
+			<div class="stock hide">Stock restant: 8</div>
 			<div class="image">
 				<img src="img/product-holds/big.jpg" />
 			</div>
@@ -143,13 +155,19 @@
 					A giant hold that can be used in many way to improve your climbing experience and add diversity to your walls.
 				</p>
 				<div class="button">
-					<button class="add">Add to Cart</button>
+					<div class="quantity">
+						<button onclick="subQ(this)">-</button>
+						<button class="quantity-value">0</button>
+						<button onclick="addQ(this)">+</button>
+					</div>
+					<div><button class="add">Add to Cart</button></div>
 				</div>
 			</div>
-		</div>
+		</div></div>
 		
-		<div class="product-container">
+		<div style="margin: 0;"><div class="product-container">
 			<div class="ref">ref: h3</div>
+			<div class="stock hide">Stock restant: 8</div>
 			<div class="image">
 				<img src="img/product-holds/color.jpg" />
 			</div><br/>
@@ -161,13 +179,19 @@
 					A pack of standard holds in multiple colors that can be use in different part of the wall.
 				</p><br/>
 				<div class="button">
-					<button class="add">Add to Cart</button>
+					<div class="quantity">
+						<button onclick="subQ(this)">-</button>
+						<button class="quantity-value">0</button>
+						<button onclick="addQ(this)">+</button>
+					</div>
+					<div><button class="add">Add to Cart</button></div>
 				</div>
 			</div>
-		</div>
+		</div></div>
 		
-		<div class="product-container">
+		<div style="margin: 0;"><div class="product-container">
 			<div class="ref">ref: h4</div>
+			<div class="stock hide">Stock restant: 8</div>
 			<div class="image">
 				<img src="img/product-holds/wood.jpg" />
 			</div>
@@ -179,13 +203,19 @@
 					Those wooden holds give the climber a different feeling than usual rug plastic and add dificulty to your wall
 				</p><br/>
 				<div class="button">
-					<button class="add">Add to Cart</button>
+					<div class="quantity">
+						<button onclick="subQ(this)">-</button>
+						<button class="quantity-value">0</button>
+						<button onclick="addQ(this)">+</button>
+					</div>
+					<div><button class="add">Add to Cart</button></div>
 				</div>
 			</div>
-		</div>
+		</div></div>
 		
-		<div class="product-container">
+		<div style="margin: 0;"><div class="product-container">
 			<div class="ref">ref: h5</div>
+			<div class="stock hide">Stock restant: 8</div>
 			<div class="image">
 				<img src="img/product-holds/volume.jpg" />
 			</div>
@@ -197,21 +227,25 @@
 					Volume allow you to easily change the shpe of your wall, they add a lot of depth and possibilitys to your climbing gym.
 				</p>
 				<div class="button">
-					<button class="add">Add to Cart</button>
+					<div class="quantity">
+						<button onclick="subQ(this)">-</button>
+						<button class="quantity-value">0</button>
+						<button onclick="addQ(this)">+</button>
+					</div>
+					<div><button class="add">Add to Cart</button></div>
 				</div>
 			</div>
-		</div>
+		</div></div>
 
 	</div>
-
-
-
-
 
 	<footer>
 		<a href="index.html#home-5" style="float: right; margin-right: 25px; line-height: 60px; color: black;">contact</a>
 		<p style="margin: 0; margin-left: 25px; margin-top:5px;">Copyright Florent Bednarek 2020<br>Cytech</p> 
 	</footer>
+
+	<script src="js/script.js" onload="load_stock(); resizeAll();"></script>
+
 </body>
 </html>
 	

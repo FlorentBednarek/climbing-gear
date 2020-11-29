@@ -16,7 +16,7 @@
 			</a>
 		</div>
 		<div class="header-links">
-			<a class="header-l fas fa-home fa-fw header-link-logo" href="index.html"></a>
+			<a class="header-l fas fa-home fa-fw header-link-logo" href="index.html#home-1"></a>
 			
 			<div class="header-l menuDeroulant">
 
@@ -49,7 +49,7 @@
 				<div class="panier">
 					<ul class="menu">
 						<li><h3 style="margin: 0;">Cart</h3></li>
-						<li>Your cart is empty :(<br>You can buy our stuff by clicking here</li>
+						<li>Your cart is empty :(</li>
 					</ul>
 				</div>
 			</div>
@@ -112,9 +112,15 @@
 	</ul>
 
 
-	<div class="content">
-		<div class="product-container">
+	<div id="content">
+		<div class="stock-toggle">
+			<input type="checkbox" class="toggle" autocomplete="off" onclick="hide_stock()">
+  			<label for="toggle">Stock</label>
+		</div>
+
+		<div style="margin:0;"><div class="product-container">
 			<div class="ref">ref: s1</div>
+			<div class="stock hide">Stock restant: 8</div>
 			<div class="image">
 				<img src="img/product-shoes/scarpa1.jpeg" />
 			</div>
@@ -157,13 +163,19 @@
 					The form and materials of this Shoes are perfect for any type of climbing and can be used by beginer and more advanced climber.
 				</p>
 				<div class="button">
-					<button class="add">Add to Cart</button>
+					<div class="quantity">
+						<button onclick="subQ(this)">-</button>
+						<button class="quantity-value">0</button>
+						<button onclick="addQ(this)">+</button>
+					</div>
+					<div><button class="add">Add to Cart</button></div>
 				</div>
 			</div>
-		</div>
+		</div></div>
 
-		<div class="product-container">
+		<div style="margin:0;"><div class="product-container">
 			<div class="ref">ref: s2</div>
+			<div class="stock hide">Stock restant: 8</div>
 			<div class="image">
 				<img src="img/product-shoes/scarpa3.jpeg" />
 			</div>
@@ -206,13 +218,19 @@
 					This shoes are perfect for Women climber and can be used by beginer or more advanced user.    
 				</p><br/>
 				<div class="button">
-					<button class="add">Add to Cart</button>
+					<div class="quantity">
+						<button onclick="subQ(this)">-</button>
+						<button class="quantity-value">0</button>
+						<button onclick="addQ(this)">+</button>
+					</div>
+					<div><button class="add">Add to Cart</button></div>
 				</div>
 			</div>
-		</div>
+		</div></div>
 
-		<div class="product-container">
+		<div style="margin:0;"><div class="product-container">
 			<div class="ref">ref: s3</div>
+			<div class="stock hide">Stock restant: 8</div>
 			<div class="image">
 				<img src="img/product-shoes/scarpa2.jpeg" />
 			</div>
@@ -255,14 +273,20 @@
 					This advanced pair of shoes is made with cutting edge technologies and suit perfectly to advanced climbers.
 				</p>
 				<div class="button">
-					<button class="add">Add to Cart</button>
+					<div class="quantity">
+						<button onclick="subQ(this)">-</button>
+						<button class="quantity-value">0</button>
+						<button onclick="addQ(this)">+</button>
+					</div>
+					<div><button class="add">Add to Cart</button></div>
 				</div>
 			</div>
-		</div>
+		</div></div>
 		
 		
-		<div class="product-container">
+		<div style="margin:0;"><div class="product-container">
 			<div class="ref">ref: s4</div>
+			<div class="stock hide">Stock restant: 8</div>
 			<div class="image">
 				<img src="img/product-shoes/lacet.jpeg" />
 			</div>
@@ -305,13 +329,19 @@
 					This pair is laced and therefore perfect for rock climbing as it is very tight to the skin.
 				</p><br/>
 				<div class="button">
-					<button class="add">Add to Cart</button>
+					<div class="quantity">
+						<button onclick="subQ(this)">-</button>
+						<button class="quantity-value">0</button>
+						<button onclick="addQ(this)">+</button>
+					</div>
+					<div><button class="add">Add to Cart</button></div>
 				</div>
 			</div>
-		</div>
+		</div></div>
 		
-		<div class="product-container">
+		<div style="margin:0;"><div class="product-container">
 			<div class="ref">ref: s5</div>
+			<div class="stock hide">Stock restant: 8</div>
 			<div class="image">
 				<img src="img/product-shoes/mountain-shoes.jpeg" />
 			</div>
@@ -354,10 +384,15 @@
 					With this shoes you can reach your favorite climbing spot safely or went to some mountain trek with your friend.
 				</p>
 				<div class="button">
-					<button class="add">Add to Cart</button>
+					<div class="quantity">
+						<button onclick="subQ(this)">-</button>
+						<button class="quantity-value">0</button>
+						<button onclick="addQ(this)">+</button>
+					</div>
+					<div><button class="add">Add to Cart</button></div>
 				</div>
 			</div>
-		</div>
+		</div></div>
 
 	</div>
 
@@ -369,5 +404,8 @@
 		<a href="index.html#home-5" style="float: right; margin-right: 25px; line-height: 60px; color: black;">contact</a>
 		<p style="margin: 0; margin-left: 25px; margin-top:5px;">Copyright Florent Bednarek 2020<br>Cytech</p> 
 	</footer>
+
+	<script src="js/script.js" onload="load_stock(); resizeAll();"></script>
+
 </body>
 </html>

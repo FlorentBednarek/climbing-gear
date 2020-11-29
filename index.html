@@ -16,7 +16,7 @@
 			</a>
 		</div>
 		<div class="header-links">
-			<a class="header-l fas fa-home fa-fw header-link-logo" href="index.html"></a>
+			<a class="header-l fas fa-home fa-fw header-link-logo" href="index.html#home-1"></a>
 			
 			<div class="header-l menuDeroulant">
 
@@ -49,7 +49,7 @@
 				<div class="panier">
 					<ul class="menu">
 						<li><h3 style="margin: 0;">Cart</h3></li>
-						<li>Your cart is empty :(<br>You can buy our stuff by clicking here</li>
+						<li>Your cart is empty :(</li>
 					</ul>
 				</div>
 			</div>
@@ -76,7 +76,7 @@
 		<input id="rad1" type="radio" name="side-menu-radio" checked>		
 		<label for="rad1" onclick="location='#home-1'">
 			<li>
-				<div class="side-menu-link">HOME</div	>
+				<div class="side-menu-link">HOME</div>
 			</li>
 		</label>
 		
@@ -110,7 +110,7 @@
 
 	</ul>
 
-	<div class="horizontal-wrapper squares">
+	<div id="horizontal-wrapper" class=" squares">
 		
 		<div class="pannel">
 			<div class="pannel-image" id="home-1"></div>
@@ -149,35 +149,35 @@
 			<div class="pannel-image" id="home-5"></div>
 			<div class="pannel-text contact">
 				<h2>Contact</h2>
-				<form action="mailto:bednarekfl@eisti.eu" method="post" enctype="text/plain">
+				<form name="contact_form" action="mailto:bednarekfl@eisti.eu" method="post" enctype="text/plain" onsubmit="return validate_form()">
 					<div class="contact-line"><p>
 						<label for="prenom">First name</label><br>
-						<input type="text" name="prenom" placeholder="Your first name...">
+						<input type="text" name="prenom" placeholder="Your first name..." required>
 					</p>
 					
 					<p >
 						<label for="nom">Last name</label><br>
-						<input type="text" name="nom" placeholder="Your last name...">
+						<input type="text" name="nom" placeholder="Your last name..." required>
 					</p></div>
 					
 					<div class="contact-line"><p>
 						<label for="mail">E-mail adress</label><br>
-						<input type="text" name="mail" placeholder="Your e-mail..."><br><br><br>
+						<input type="mail" name="mail" placeholder="Your e-mail..." required><br><br><br>
 					</p>
 					
 					<p class="sexe" >
 						<label for="sexe">Sexe</label><br>
-						<input type="radio" name="sexe">
+						<input type="radio" name="sexe" required checked>
 						Men<br>
-						<input type="radio" name="sexe">
+						<input type="radio" name="sexe" required>
 						Women<br>
-						<input type="radio" name="sexe">
+						<input type="radio" name="sexe" required>
 						Other<br>
 					</p></div>
 					
 					<div class="contact-line last"><p>
 						<label for="metier">Occupation</label><br>
-						<select id="metier" name="metier" >
+						<select id="metier" name="metier" required>
 						  <option value="Student">Student</option>
 						  <option value="Active">Active</option>
 						  <option value="Retired">Retired</option>
@@ -186,30 +186,31 @@
 					
 					<p>
 						<label for="date de naissance">Date of birth</label><br>
-						<input type="date" name="date de naissance">
+						<input type="date" name="date de naissance" required>
 					</p>
 					</div>
 
 					<p>
 						<label for="contenu">Subject</label><br>
-						<textarea rows="7" cols="88" name="contenu" placeholder="Your message..."></textarea>
+						<textarea rows="7" cols="88" name="contenu" placeholder="Your message..." required></textarea>
 					</p>
 
 
 					<p>
-						<input type="submit" name="submit" value="Submit">
+						<input type="submit">
 					</p>
 				</form>
 			</div> 	
 		</div>  
 	</div>
 	
-
-
 	<footer>
 		<a href="index.html#home-5" style="float: right; margin-right: 25px; line-height: 60px; color: black;">contact</a>
 		<p style="margin: 0; margin-left: 25px; margin-top:5px;">Copyright Florent Bednarek 2020<br>Cytech</p> 
 
 	</footer>
+
+	<script src="js/home.js"></script>
+
 </body>
 </html>
